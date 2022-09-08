@@ -1,0 +1,86 @@
+body {
+  height: 100%;
+  height: auto;
+  background-color: pink;
+  width: 100%;
+  /* height: 100%; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  height: auto;
+  width: 100%;
+}
+
+.test {
+  background-color: aqua;
+  width: 50vh;
+  height: 50vh;
+}
+
+.test-2 {
+  width: 50%;
+}
+
+.animation-axis-1 {
+  position: absolute;
+  top: -45%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  animation: revolve_anticlockwise 20s infinite linear;
+  z-index: 1;
+}
+
+.animation-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vw;
+  background-color: aqua;
+}
+.animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ababab;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+.animation-container {
+  background-color: red;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 200;
+}
+
+.animation-container-child {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* z-index: -1; */
+  /* overflow: hidden; */
+
+  background-color: aqua;
+}
+
+@keyframes revolve_anticlockwise {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes revolve_clockwise {
+  0% {
+    transform: rotate(-360deg);
+  }
+}
