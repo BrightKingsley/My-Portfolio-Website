@@ -1,10 +1,3 @@
-// window.onbeforeunload = () => {
-//   window.scrollTo(0, 0);
-// };
-
-
-// window.innerHeight = window.innerWidth < 700 ? 450 : 680;
-
 const projectLinks = [
   {
     project: "tic-tac-toe",
@@ -106,9 +99,9 @@ function getPosition() {
   lettersPosition();
 }
 
-// const retrievedPosition = setInterval(() => {
-// getPosition();
-// }, 50);
+const retrievedPosition = setInterval(() => {
+getPosition();
+}, 50);
 
 Section_1();
 
