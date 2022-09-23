@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;1,100&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../style/main.css" />
     <link rel="shortcut icon" type="image/png" href="../svg/icons.svg" />
     <script defer src="../script/jquery.js"></script>
@@ -29,7 +35,7 @@
         <div class="hero_img_container">
           <img
             class="hero_img"
-            src="../img/photo-1.jpeg"
+            src="../img/hero-img.jpeg"
             alt=""
             draggable="false"
           />
@@ -63,7 +69,11 @@
             <div class="section-1_right-container">
               <div class="secion-1_img_back-color"></div>
               <div class="profile-img">
-                <img src="../img/PortfolioProfilePic2.png" alt="" />
+                <img
+                  class="the-img"
+                  src="../img/PortfolioProfilePic.png"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -286,7 +296,11 @@
           <div class="footer-right">
             <h2><span> Send me </span>a message</h2>
             <div class="message_container">
-              <form action="submit">
+              <form
+                target="_blank"
+                action="https://formsubmit.co/65882cb136c1dd2ed02e563297747837 "
+                method="POST"
+              >
                 <input
                   type="text"
                   name="Name"
@@ -300,7 +314,7 @@
                   required
                 />
                 <!-- <input type="number" placeholder="Your Number" /> -->
-                <input type="text" placeholder="Your Subject" />
+                <input type="text" placeholder="Your Subject" name="Subject" />
                 <textarea
                   name="Message"
                   placeholder="Enter message"

@@ -2,27 +2,32 @@
 //   window.scrollTo(0, 0);
 // };
 
-// window.innerWidth < 700 ? (window.innerHeight = 450) : 1128;
 
 // window.innerHeight = window.innerWidth < 700 ? 450 : 680;
 
 const projectLinks = [
-  { project: "tic-tac-toe", link: "https://github.com/BrightKingsley" },
   {
-    project: "MusicPlayer",
-    link: "https://www.linkedin.com/in/bright-kingsley-196542247",
+    project: "tic-tac-toe",
+    link: "https://brightkingsley-ticc-tac-toe.netlify.app/",
   },
   {
     project: "Agriculture Website",
-    link: "https://twitter.com/BriggSKvngZ?t=16jeXkK8sgjX4pYWc82egg&s=09",
+    link: "https://github.com/BrightKingsley/Practice-Agriculture-Website",
   },
-  { project: "Expense Tracker", link: "https://www.facebook.com/BriggSKvngZ" },
-  { project: "Expense Tracker", link: "https://www.facebook.com/BriggSKvngZ" },
-  { project: "Expense Tracker", link: "https://www.facebook.com/BriggSKvngZ" },
-  { project: "Expense Tracker", link: "https://www.facebook.com/BriggSKvngZ" },
-  { project: "Expense Tracker", link: "https://www.facebook.com/BriggSKvngZ" },
-  { project: "Expense Tracker", link: "https://www.facebook.com/BriggSKvngZ" },
-  { project: "Expense Tracker", link: "https://www.facebook.com/BriggSKvngZ" },
+  {
+    project: "Music Player",
+    link: "https://github.com/BrightKingsley/Music-Player",
+  },
+  { project: "Side Scroler", link: "" },
+  { project: "Expense Tracker", link: "" },
+  {
+    project: "Fashion Exhibition",
+    link: "https://github.com/BrightKingsley/Fashion-Exhibition-Display-site-React",
+  },
+  {
+    project: "Elevator Simulator",
+    link: "https://brightkingsley-elevator-simulator.netlify.app/",
+  },
 ];
 
 //NOTENOTE/NOTENOTE/NOTENOTE/NOTENOTENOTE/NOTE/NOTENOTENOTE/NOTENOTENOTE
@@ -180,8 +185,8 @@ const Section_3 = function () {
   function showModal() {
     slidesContainer.classList.add("show-projects-modal");
     getSliderFunction(0);
-    document.querySelectorAll(".section-3_content").forEach((content) => {
-      content.setAttribute("href", "#");
+    document.querySelectorAll(".section-3_content").forEach((content, i) => {
+      content.setAttribute("href", `${projectLinks[i].link}`);
     });
   }
   // }
@@ -427,6 +432,45 @@ function fullWidth(index) {
   h2Underline[index - 1].style.setProperty("--width-zero", widthFull);
 }
 
-document.querySelector(".submit-btn").addEventListener("click", (e) => {
-  e.preventDefault();
-});
+//NOTE CALCULATOR
+/*
+const addNums = function (nums) {
+  console.log(nums);
+  let sum = 0;
+  nums.forEach((num, i) => {
+    sum += num;
+  });
+  console.log(sum);
+};
+const subtractNums = function (nums) {
+  console.log(nums);
+  let sum = nums[0];
+  nums.forEach((num, i) => {
+    i < nums.length - 1 ? (sum -= nums[i + 1]) : null;
+  });
+  console.log(sum);
+};
+
+const multiplyNums = function (nums) {
+  console.log(nums);
+  let sum = nums[0];
+  nums.forEach((num, i) => {
+    i < nums.length - 1 ? (sum *= nums[i + 1]) : null;
+  });
+  console.log(sum);
+};
+
+const divideNums = function (nums) {
+  console.log(nums);
+  let sum = nums[0];
+  nums.forEach((_, i) => {
+    i < nums.length - 1 ? (sum /= nums[i + 1]) : null;
+  });
+  console.log(sum);
+};
+
+addNums([2, 5]);
+subtractNums([8, 5, 4, 3]);
+multiplyNums([3, 5]);
+divideNums([6, 3]);
+*/
