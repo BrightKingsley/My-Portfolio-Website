@@ -1,6 +1,6 @@
 @import "./variables";
 
-@media (min-width: 471px) {
+@media (min-width: 471) {
   html {
     scroll-behavior: smooth;
     height: 100%;
@@ -595,6 +595,7 @@
           position: relative;
           width: 100%;
           height: 100%;
+          background-color: $main-color-1;
 
           border: 5px solid $main-color-1;
           border-radius: 10px;
@@ -607,10 +608,7 @@
             transition: all 1s;
             position: absolute;
             bottom: 0px;
-            // border-radius: 0 0 10px 10px;
-            // background-color: rgba(76, 110, 245, 0.85);
             background-color: $main-color-1;
-            // backdrop-filter: blur(10px);
             width: 100%;
             height: 15%;
             display: flex;
@@ -641,8 +639,8 @@
             }
 
             svg {
-              width: 7vw;
-              height: 7vw;
+              width: 6vw;
+              height: 6vw;
               fill: $accent-color;
             }
           }
