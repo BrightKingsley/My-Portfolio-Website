@@ -564,24 +564,6 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .section-3 .section-3_container .section-3_container-child .section-3_content_wrapper-wrapper .section-3_content-more .full-view_container {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .section-3 .section-3_container .section-3_container-child .section-3_content_wrapper-wrapper .section-3_content-more .line-between {
-    width: 0.5%;
-    height: 90%;
-    border-radius: 50px;
-    background-color: #dbbb3b;
-  }
   .section-3 .section-3_container .section-3_container-child .section-3_content_wrapper-wrapper .section-3_content-more svg {
     margin-top: 0.5rem;
     width: 1.3rem;
@@ -627,6 +609,24 @@
     height: auto;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .section-3 .section-3_container .section-3_container-child .full-view_container {
+    display: inline-block;
+    position: absolute;
+    right: -6%;
+    bottom: -7%;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    z-index: 200;
+    cursor: pointer;
+  }
+  .section-3 .section-3_container .section-3_container-child .full-view_container svg {
+    fill: #dbbb3b;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 5px;
+    background-color: #4c6ef5;
+    border-radius: 50%;
   }
   .section-3 .section-3_container .section-3_container-child .btn_exit-modal {
     display: none;
@@ -811,11 +811,14 @@
        object-fit: cover;
     border-radius: 5px;
   }
+  .show-projects-modal .section-3_container .section-3_container-child .full-view_container {
+    display: none;
+  }
   .show-projects-modal .section-3_container .section-3_container-child .btn_exit-modal {
     display: inline-block;
     position: absolute;
     right: 0;
-    top: 0;
+    bottom: 0;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
     z-index: 200;
@@ -1185,7 +1188,7 @@
   }
 }
 
-@media (min-width: 471) {
+@media (min-width: 471px) {
   html {
     scroll-behavior: smooth;
     height: 100%;
@@ -1843,24 +1846,6 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .section-3 .section-3_container .section-3_container-child .section-3_content_wrapper-wrapper .section-3_content-more .full-view_container {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .section-3 .section-3_container .section-3_container-child .section-3_content_wrapper-wrapper .section-3_content-more .line-between {
-    width: 0.5%;
-    height: 90%;
-    border-radius: 50px;
-    background-color: #dbbb3b;
-  }
   .section-3 .section-3_container .section-3_container-child .section-3_content_wrapper-wrapper .section-3_content-more svg {
     width: 6vw;
     height: 6vw;
@@ -1896,6 +1881,26 @@
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .section-3 .section-3_container .section-3_container-child .full-view_container {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    position: absolute;
+    right: 2%;
+    bottom: 5%;
+    border-radius: 50%;
+    z-index: 200;
+    cursor: pointer;
+  }
+  .section-3 .section-3_container .section-3_container-child .full-view_container svg {
+    fill: #dbbb3b;
+    width: 4rem;
+    height: 4rem;
+    padding: 10px;
+    border: 3px solid #dbbb3b;
+    background-color: #4c6ef5;
+    border-radius: 50%;
   }
   .section-3 .section-3_container .section-3_container-child .btn_exit-modal {
     display: none;
@@ -2068,6 +2073,9 @@
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 10px;
+  }
+  .show-projects-modal .section-3_container .section-3_container-child .full-view_container {
+    display: none;
   }
   .show-projects-modal .section-3_container .section-3_container-child .btn_exit-modal {
     display: inline-block;
@@ -3109,24 +3117,6 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .section-3 .section-3_container .section-3_container-child .section-3_content_wrapper-wrapper .section-3_content-more .full-view_container {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .section-3 .section-3_container .section-3_container-child .section-3_content_wrapper-wrapper .section-3_content-more .line-between {
-    width: 0.5%;
-    height: 90%;
-    border-radius: 50px;
-    background-color: #dbbb3b;
-  }
   .section-3 .section-3_container .section-3_container-child .section-3_content_wrapper-wrapper .section-3_content-more svg {
     width: 3rem;
     height: 3rem;
@@ -3162,6 +3152,26 @@
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .section-3 .section-3_container .section-3_container-child .full-view_container {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    position: absolute;
+    right: 2%;
+    bottom: 5%;
+    border-radius: 50%;
+    z-index: 200;
+    cursor: pointer;
+  }
+  .section-3 .section-3_container .section-3_container-child .full-view_container svg {
+    fill: #dbbb3b;
+    width: 4rem;
+    height: 4rem;
+    padding: 10px;
+    border: 3px solid #dbbb3b;
+    background-color: #4c6ef5;
+    border-radius: 50%;
   }
   .section-3 .section-3_container .section-3_container-child .btn_exit-modal {
     display: none;
@@ -3334,6 +3344,9 @@
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 10px;
+  }
+  .show-projects-modal .section-3_container .section-3_container-child .full-view_container {
+    display: none;
   }
   .show-projects-modal .section-3_container .section-3_container-child .btn_exit-modal {
     display: inline-block;

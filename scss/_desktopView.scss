@@ -625,20 +625,6 @@
               align-items: center;
             }
 
-            .full-view_container {
-              width: 100%;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            }
-
-            .line-between {
-              width: 0.5%;
-              height: 90%;
-              border-radius: 50px;
-              background-color: $accent-color;
-            }
-
             svg {
               width: 3rem;
               height: 3rem;
@@ -671,6 +657,31 @@
                 object-fit: cover;
               }
             }
+          }
+        }
+
+        .full-view_container {
+          width: auto;
+          height: auto;
+          display: inline-block;
+          position: absolute;
+          right: 2%;
+          bottom: 5%;
+          border-radius: 50%;
+          // background-color: $main-color-1;
+
+          z-index: 200;
+          cursor: pointer;
+
+          svg {
+            fill: $accent-color;
+            width: 4rem;
+            height: 4rem;
+            padding: 10px;
+            border: 3px solid $accent-color;
+            background-color: $main-color-1;
+
+            border-radius: 50%;
           }
         }
 
@@ -854,6 +865,10 @@
               }
             }
           }
+        }
+
+        .full-view_container{
+          display: none;
         }
 
         .btn_exit-modal {

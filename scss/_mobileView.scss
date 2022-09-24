@@ -526,20 +526,6 @@
               align-items: center;
             }
 
-            .full-view_container {
-              width: 100%;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            }
-
-            .line-between {
-              width: 0.5%;
-              height: 90%;
-              border-radius: 50px;
-              background-color: $accent-color;
-            }
-
             svg {
               margin-top: 0.5rem;
               width: 1.3rem;
@@ -579,6 +565,26 @@
                 object-fit: cover;
               }
             }
+          }
+        }
+        .full-view_container {
+          display: inline-block;
+          position: absolute;
+          right: -6%;
+          bottom: -7%;
+
+          transform: rotate(-90deg);
+          z-index: 200;
+          cursor: pointer;
+
+          svg {
+            fill: $accent-color;
+            width: 2.5rem;
+            height: 2.5rem;
+            padding: 5px;
+            background-color: $main-color-1;
+
+            border-radius: 50%;
           }
         }
 
@@ -777,11 +783,15 @@
           }
         }
 
+        .full-view_container {
+          display: none;
+        }
+
         .btn_exit-modal {
           display: inline-block;
           position: absolute;
           right: 0;
-          top: 0;
+          bottom: 0;
 
           transform: rotate(-90deg);
           z-index: 200;
