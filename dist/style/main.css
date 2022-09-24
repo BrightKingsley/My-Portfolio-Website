@@ -1294,7 +1294,10 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -x: visible;
+    overflow-x: visible;
+  }
+  .letter {
+    color: #adb5bd;
   }
   .symbol {
     color: #4c6ef5;
@@ -2576,7 +2579,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -x: visible;
+    overflow-x: visible;
   }
   .letter {
     color: #adb5bd;

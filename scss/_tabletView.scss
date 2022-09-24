@@ -102,8 +102,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    -x: visible;
+    overflow-x: visible;
   }
+
+  .letter {
+    color: $grey-color-2;
+  }
+
   .symbol {
     color: $main-color-1;
   }
