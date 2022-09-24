@@ -1785,10 +1785,12 @@
     -webkit-transition: all 2s;
     transition: all 2s;
     z-index: 600;
+    overflow-x: visible;
   }
   .section-3 .section-3_container .section-3_h2_wrapper h2 {
     text-transform: capitalize;
     z-index: 60;
+    overflow-x: visible;
   }
   .section-3 .section-3_container .section-3_container-child {
     width: 67%;

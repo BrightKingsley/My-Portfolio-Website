@@ -576,11 +576,12 @@
 
         transition: all 2s;
         z-index: 600;
+        overflow-x: visible;
 
         h2 {
           text-transform: capitalize;
           z-index: 60;
-          // overflow-x: visible;
+          overflow-x: visible;
         }
       }
 
@@ -731,7 +732,6 @@
         transform: translateX(-50%);
         display: flex;
         overflow-x: visible;
-
 
         .dots_dot {
           border: none;
