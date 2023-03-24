@@ -1,7 +1,8 @@
+// https://github.com/BrightKingsley/Apartment-Listing-Site-pwa
 const projectLinks = [
   {
-    project: "tic-tac-toe",
-    link: "https://brightkingsley-ticc-tac-toe.netlify.app/",
+    project: "Apartment Listing app",
+    link: "https://github.com/BrightKingsley/Apartment-Listing-Site-pwa",
   },
   {
     project: "Agriculture Website",
@@ -16,6 +17,10 @@ const projectLinks = [
   {
     project: "Fashion Exhibition",
     link: "https://github.com/BrightKingsley/Fashion-Exhibition-Display-site-React",
+  },
+  {
+    project: "tic-tac-toe",
+    link: "https://brightkingsley-ticc-tac-toe.netlify.app/",
   },
   {
     project: "Elevator Simulator",
@@ -100,7 +105,7 @@ function getPosition() {
 }
 
 const retrievedPosition = setInterval(() => {
-getPosition();
+  getPosition();
 }, 50);
 
 Section_1();
