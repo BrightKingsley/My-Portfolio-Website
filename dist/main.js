@@ -2,33 +2,68 @@
 const projectLinks = [
   {
     project: "Apartment Listing app",
-    link: "https://github.com/BrightKingsley/Apartment-Listing-Site-pwa",
+    links: {
+      github: "https://github.com/BrightKingsley/Apartment-Listing-Site-pwa",
+      live: "https://raale-brightkingsley.vercel.app",
+    },
   },
   {
     project: "Mapty-React",
-    link: "https://mapty-react-brightkingsley.vercel.app",
+    links: {
+      github: "https://github.com/BrightKingsley/mapty-react",
+      live: "https://mapty-react-brightkingsley.vercel.app",
+    },
   },
   {
     project: "Agriculture Website",
-    link: "https://github.com/BrightKingsley/Practice-Agriculture-Website",
+    links: {
+      github: "https://github.com/BrightKingsley/Practice-Agriculture-Website",
+      live: "https://vercel.com/brightkingsley/agriculture-website",
+    },
   },
   {
     project: "Music Player",
-    link: "https://github.com/BrightKingsley/Music-Player",
+    links: {
+      github: "https://github.com/BrightKingsley/Music-Player",
+      live: "https://github.com/BrightKingsley/Music-Player",
+    },
   },
-  { project: "Side Scroler", link: "" },
-  { project: "Expense Tracker", link: "" },
+  {
+    project: "Side Scroler",
+    links: {
+      github: "https://github.com/BrightKingsley/Side-Scroller-Game",
+      live: "https://github.com/BrightKingsley/Side-Scroller-Game",
+    },
+  },
+  {
+    project: "Expense Tracker",
+    links: {
+      github: "https://github.com/BrightKingsley/Apartment-Listing-Site-pwa",
+      live: "https://raale-brightkingsley.vercel.app",
+    },
+  },
   {
     project: "Fashion Exhibition",
-    link: "https://github.com/BrightKingsley/Fashion-Exhibition-Display-site-React",
+    links: {
+      github:
+        "https://github.com/BrightKingsley/Fashion-Exhibition-Display-site-React",
+      live: "https://github.com/BrightKingsley/Fashion-Exhibition-Display-site-React",
+    },
   },
   {
     project: "tic-tac-toe",
     link: "https://brightkingsley-ticc-tac-toe.netlify.app/",
+    links: {
+      github: "https://github.com/BrightKingsley/Tic-Tac-Toe ",
+      live: "https://brightkingsley-ticc-tac-toe.netlify.app",
+    },
   },
   {
     project: "Elevator Simulator",
-    link: "https://brightkingsley-elevator-simulator.netlify.app/",
+    links: {
+      github: "https://github.com/BrightKingsley/Elevator-simu",
+      live: "https://brightkingsley-elevator-simulator.netlify.app/",
+    },
   },
 ];
 
@@ -212,8 +247,11 @@ const Section_3 = function () {
 
     const setSlideLink = function (slide) {
       document
-        .querySelector(".link_container")
-        .setAttribute("href", `${projectLinks[slide].link}`);
+        .querySelector(".link_container-github")
+        .setAttribute("href", `${projectLinks[slide].links.github}`);
+      document
+        .querySelector(".link_container-live")
+        .setAttribute("href", `${projectLinks[slide].links.live}`);
     };
 
     const goToSlide = function (slide) {
