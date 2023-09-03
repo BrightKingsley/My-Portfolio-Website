@@ -36,6 +36,13 @@ const projectLinks = [
     },
   },
   {
+    project: "Hotel Haven",
+    links: {
+      github: "https://github.com/BrightKingsley/hotel-booking-site",
+      live: "https://github.com/BrightKingsley/hotel-haven.vercel.app",
+    },
+  },
+  {
     project: "Side Scroler",
     links: {
       github: "https://github.com/BrightKingsley/Side-Scroller-Game",
