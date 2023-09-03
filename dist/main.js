@@ -15,6 +15,13 @@ const projectLinks = [
     },
   },
   {
+    project: "iPhone12 design",
+    links: {
+      github: "https://github.com/BrightKingsley/iPhone-Design",
+      live: "https://i-phone-design.vercel.app",
+    },
+  },
+  {
     project: "Agriculture Website",
     links: {
       github: "https://github.com/BrightKingsley/Practice-Agriculture-Website",
