@@ -5,6 +5,10 @@ const projectLinks = [
     link: "https://github.com/BrightKingsley/Apartment-Listing-Site-pwa",
   },
   {
+    project: "Mapty-React",
+    link: "https://mapty-react-brightkingsley.vercel.app",
+  },
+  {
     project: "Agriculture Website",
     link: "https://github.com/BrightKingsley/Practice-Agriculture-Website",
   },
