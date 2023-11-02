@@ -4,7 +4,7 @@ const projectLinks = [
     project: "Apartment Listing app",
     links: {
       github: "https://github.com/BrightKingsley/Apartment-Listing-Site-pwa",
-      live: "https://raale-brightkingsley.vercel.app",
+      live: "https://raale-ajei.onrender.com",
     },
   },
   {
@@ -25,7 +25,7 @@ const projectLinks = [
     project: "Agriculture Website",
     links: {
       github: "https://github.com/BrightKingsley/Practice-Agriculture-Website",
-      live: "https://vercel.com/brightkingsley/agriculture-website",
+      live: "https://agriculture-website-three.vercel.app",
     },
   },
   {
@@ -53,7 +53,7 @@ const projectLinks = [
     project: "Expense Tracker",
     links: {
       github: "https://github.com/BrightKingsley/Apartment-Listing-Site-pwa",
-      live: "https://raale-brightkingsley.vercel.app",
+      live: "https://github.com/BrightKingsley/Apartment-Listing-Site-pwa",
     },
   },
   {
